@@ -1,0 +1,11 @@
+Material MyMaterial : Common/MatDefs/Light/Lighting.j3md {
+    MaterialParameters {
+        HardwareShadows : true
+        ParallaxHeight : 0.05
+        DiffuseMap : WrapRepeat_T WrapRepeat_S MagBilinear MinBilinearNoMipMaps Textures/palette.png
+        BackfaceShadows : true
+        Shininess : 1.0
+    }
+    AdditionalRenderState {
+    }
+}

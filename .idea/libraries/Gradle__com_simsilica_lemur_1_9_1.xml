@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.simsilica:lemur:1.9.1">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.simsilica/lemur/1.9.1/4cf0982db2f5e436577ac723607c8a5d432ac3f1/lemur-1.9.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.simsilica/lemur/1.9.1/c9c49c517563a355d6aac317214b2e05bde498c7/lemur-1.9.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

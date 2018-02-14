@@ -1,0 +1,35 @@
+<scene formatVersion="1.0.1" previous_export_time="1518282014.7402349" export_time="1518282037.8238342" exported_by="thonon" >
+  <nodes >
+    <node name="Armature" >
+      <position x="0.000000" y="0.000000" z="-0.000000" />
+      <rotation qx="0.000000" qz="-0.000000" qy="0.000000" qw="1.000000" />
+      <scale x="1.000000" y="1.000000" z="1.000000" />
+      <user_data type="IDPropertyGroup" name="ant_landscape" value='&lt;bpy id prop: owner="OBArmature", name="ant_landscape", address=0x0000017ECF339028&gt;' />
+      <game >
+        <sensors />
+        <actuators />
+      </game>
+      <node name="Cube.005_Cube.006_Material" >
+        <position x="0.000000" y="0.000000" z="-0.000000" />
+        <rotation qx="0.000000" qz="-0.000000" qy="0.000000" qw="1.000000" />
+        <scale x="1.000000" y="1.000000" z="1.000000" />
+        <user_data type="IDPropertyGroup" name="ant_landscape" value='&lt;bpy id prop: owner="OBCube.005_Cube.006_Material", name="ant_landscape", address=0x0000017ECF33B428&gt;' />
+        <game >
+          <sensors />
+          <actuators />
+        </game>
+        <entity lock_rot_x="False" friction_x="1.0" mass_radius="1.0" lock_trans_x="False" velocity_max="0.0" friction_y="1.0" damping_rot="0.10000000149011612" inertia_tensor="0.4000000059604645" velocity_min="0.0" lock_trans_z="False" anisotropic_friction="False" actor="False" name="Cube.005_Cube.006_Materialmesh.001" meshFile="Cube.005_Cube.006_Materialmesh.001.mesh" mass="1.0" lock_trans_y="False" lock_rot_z="False" friction_z="1.0" lock_rot_y="False" ghost="False" damping_trans="0.03999999910593033" physics_type="STATIC" />
+      </node>
+    </node>
+  </nodes>
+  <externals >
+    <item type="material" >
+      <file name="C:\Users\thonon\IdeaProjects\PlateformGame\src\main\assets\Models\AVATAR\Materialmat.001.material" />
+    </item>
+  </externals>
+  <environment >
+    <colourAmbient g="0.0" b="0.0" r="0.0" />
+    <colourDiffuse g="0.05087608844041824" b="0.05087608844041824" r="0.05087608844041824" />
+    <colourBackground g="0.05087608844041824" b="0.05087608844041824" r="0.05087608844041824" />
+  </environment>
+</scene>

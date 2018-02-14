@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="jME example.jnlp">
+  <information>
+    <title>jME example</title>
+    <vendor>Unknown</vendor>
+    <description>jME example</description>
+    <offline-allowed/>
+  <shortcut><desktop/></shortcut>
+  </information>
+  <resources>
+    <j2se version="1.6+" java-vm-args="-XX:+UseParallelGC "  href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="PlateformGame.jar" size="7808561" download="eager" />
+    <jar href="libs\SimFX-1.0.5.jar" size="45375" download="eager" />
+    <jar href="libs\SkyControl-0.9.11.jar" size="1957079" download="eager" />
+    <jar href="libs\annotations-15.0.jar" size="18614" download="eager" />
+    <jar href="libs\gson-2.8.1.jar" size="232620" download="eager" />
+    <jar href="libs\guava-19.0.jar" size="2308517" download="eager" />
+    <jar href="libs\j-ogg-all-1.0.0.jar" size="159612" download="eager" />
+    <jar href="libs\jme3-bullet-3.2.1-stable.jar" size="167491" download="eager" />
+    <jar href="libs\jme3-bullet-native-3.2.1-stable.jar" size="5411341" download="eager" />
+    <jar href="libs\jme3-core-3.2.1-stable.jar" size="1745820" download="eager" />
+    <jar href="libs\jme3-desktop-3.2.1-stable.jar" size="245640" download="eager" />
+    <jar href="libs\jme3-effects-3.2.1-stable.jar" size="524604" download="eager" />
+    <jar href="libs\jme3-jogg-3.2.1-stable.jar" size="10458" download="eager" />
+    <jar href="libs\jme3-lwjgl3-3.2.1-stable.jar" size="126836" download="eager" />
+    <jar href="libs\jme3-plugins-3.2.1-stable.jar" size="315163" download="eager" />
+    <jar href="libs\jme3-terrain-3.2.1-stable.jar" size="166751" download="eager" />
+    <jar href="libs\jme3-utilities-heart-2.0.0.jar" size="131341" download="eager" />
+    <jar href="libs\jmonkeybuilder-extension-1.9.8.jar" size="134666" download="eager" />
+    <jar href="libs\lemur-1.9.1.jar" size="329586" download="eager" />
+    <jar href="libs\lwjgl-3.1.2-natives-linux.jar" size="75964" download="eager" />
+    <jar href="libs\lwjgl-3.1.2-natives-macos.jar" size="34785" download="eager" />
+    <jar href="libs\lwjgl-3.1.2-natives-windows.jar" size="229565" download="eager" />
+    <jar href="libs\lwjgl-3.1.2.jar" size="271541" download="eager" />
+    <jar href="libs\lwjgl-glfw-3.1.2-natives-linux.jar" size="61020" download="eager" />
+    <jar href="libs\lwjgl-glfw-3.1.2-natives-macos.jar" size="44031" download="eager" />
+    <jar href="libs\lwjgl-glfw-3.1.2-natives-windows.jar" size="228364" download="eager" />
+    <jar href="libs\lwjgl-glfw-3.1.2.jar" size="97080" download="eager" />
+    <jar href="libs\lwjgl-jemalloc-3.1.2-natives-linux.jar" size="107501" download="eager" />
+    <jar href="libs\lwjgl-jemalloc-3.1.2-natives-macos.jar" size="78751" download="eager" />
+    <jar href="libs\lwjgl-jemalloc-3.1.2-natives-windows.jar" size="180857" download="eager" />
+    <jar href="libs\lwjgl-jemalloc-3.1.2.jar" size="34378" download="eager" />
+    <jar href="libs\lwjgl-openal-3.1.2-natives-linux.jar" size="489101" download="eager" />
+    <jar href="libs\lwjgl-openal-3.1.2-natives-macos.jar" size="406200" download="eager" />
+    <jar href="libs\lwjgl-openal-3.1.2-natives-windows.jar" size="1060873" download="eager" />
+    <jar href="libs\lwjgl-openal-3.1.2.jar" size="74334" download="eager" />
+    <jar href="libs\lwjgl-opencl-3.1.2.jar" size="154789" download="eager" />
+    <jar href="libs\lwjgl-opengl-3.1.2-natives-linux.jar" size="88772" download="eager" />
+    <jar href="libs\lwjgl-opengl-3.1.2-natives-macos.jar" size="44341" download="eager" />
+    <jar href="libs\lwjgl-opengl-3.1.2-natives-windows.jar" size="172213" download="eager" />
+    <jar href="libs\lwjgl-opengl-3.1.2.jar" size="744400" download="eager" />
+    <jar href="libs\slf4j-api-1.7.13.jar" size="33088" download="eager" />
+    <jar href="libs\tonegodemitter-2.4.1.jar" size="146823" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="0" height="0" main-class="com.jme.example.Starter"  name="jME example" />
+  <update check="background"/>
+</jnlp>
