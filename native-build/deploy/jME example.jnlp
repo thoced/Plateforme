@@ -9,7 +9,7 @@
   </information>
   <resources>
     <j2se version="1.6+" java-vm-args="-XX:+UseParallelGC "  href="http://java.sun.com/products/autodl/j2se"/>
-    <jar href="PlateformGame.jar" size="7979632" download="eager" />
+    <jar href="PlateformGame.jar" size="19706731" download="eager" />
     <jar href="libs/SimFX-1.0.5.jar" size="45375" download="eager" />
     <jar href="libs/SkyControl-0.9.11.jar" size="1957079" download="eager" />
     <jar href="libs/annotations-15.0.jar" size="18614" download="eager" />

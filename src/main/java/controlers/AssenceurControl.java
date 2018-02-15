@@ -86,11 +86,14 @@ public class AssenceurControl extends AbstractControl implements Savable,Cloneab
         if(spatial != null){
             destination = (Node) ((Node)spatial).getChild("destination");
 
-            if (startPosition == null)
-                startPosition = this.getSpatial().getWorldTranslation().clone();
-            if (endPosition == null) {
-                endPosition = startPosition.clone();
-                endPosition.addLocal(destination.getLocalTranslation());
+            if(destination != null) {
+
+                if (startPosition == null)
+                    startPosition = this.getSpatial().getWorldTranslation().clone();
+                if (endPosition == null) {
+                    endPosition = startPosition.clone();
+                    endPosition.addLocal(destination.getLocalTranslation());
+                }
             }
         }
     }

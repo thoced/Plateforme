@@ -22,7 +22,7 @@ public class AvatarControl extends AbstractControl {
 
     private Vector3f directionSave = Vector3f.UNIT_X;
 
-    private float speed = 32f;
+    private float speed = 4f;
 
     public void setDirVelocity(Vector3f dir){
         this.dir = dir;
@@ -38,29 +38,22 @@ public class AvatarControl extends AbstractControl {
 
     @Override
     protected void controlUpdate(float tpf) {
-        CharacterControl control  = this.getSpatial().getControl(CharacterControl.class);
+        BetterCharacterControl control  = this.getSpatial().getControl(BetterCharacterControl.class);
         if(control != null) {
                 Vector3f direction = Vector3f.ZERO.clone();
                 System.out.println(dir);
 
-                direction.addLocal(dir.multLocal(0.025f));
+                direction.addLocal(dir.multLocal(speed));
                 control.setWalkDirection(direction);
                 control.setViewDirection(direction);
 
 
-                List<PhysicsRayTestResult> list = control.getPhysicsSpace().rayTest(control.getPhysicsLocation(),new Vector3f(0,-1,0));
-                for(PhysicsRayTestResult pr : list){
-                    if(pr.getCollisionObject() instanceof RigidBodyControl){
-                        RigidBodyControl rc = (RigidBodyControl) pr.getCollisionObject();
 
-                        //control.setWalkDirection(control.getWalkDirection().add(rc.gets));
-                    }
-                }
 
             // jump
             if (this.jump){
-                if(control.onGround())
-                    control.jump(Vector3f.UNIT_Y.mult(3f));
+                if(control.isOnGround())
+                    control.jump();
                 jump = false;
                 }
         }

@@ -34,6 +34,8 @@ public class CameraAppState extends AbstractAppState {
 
     private double maxPitchAngle = 70f;
 
+    private float speed = 2f;
+
     private CameraNode cameraNode;
 
     private Node nodeTarget;
@@ -71,8 +73,8 @@ public class CameraAppState extends AbstractAppState {
         Quaternion quaternionCamera = nodeTarget.getWorldRotation();
         float[] angles = new float[3];
         quaternionCamera.toAngles(angles);
-        angles[0] += rotationCameraX * tpf;
-        angles[1] += rotationCameraY * tpf;
+        angles[0] += rotationCameraX * tpf * speed;
+        angles[1] += rotationCameraY * tpf * speed;
 
         if(angles[0] < Math.toRadians(minPitchAngle))
             angles[0] = (float)minPitchAngle;
@@ -81,6 +83,7 @@ public class CameraAppState extends AbstractAppState {
 
         quaternionCamera.fromAngles(angles);
         nodeTarget.setLocalRotation(quaternionCamera);
+
 
         if(avatarSpatial != null) {
             nodeTarget.setLocalTranslation(avatarSpatial.getWorldTranslation());

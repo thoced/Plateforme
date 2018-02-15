@@ -1,0 +1,149 @@
+{
+    "accessors" : [
+        {
+            "bufferView" : 0, 
+            "componentType" : 5121, 
+            "count" : 168, 
+            "max" : [
+                98
+            ], 
+            "min" : [
+                0
+            ], 
+            "type" : "SCALAR"
+        }, 
+        {
+            "bufferView" : 1, 
+            "componentType" : 5126, 
+            "count" : 99, 
+            "max" : [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "min" : [
+                -1.0, 
+                -1.0, 
+                -0.17766070365905762
+            ], 
+            "type" : "VEC3"
+        }, 
+        {
+            "bufferView" : 2, 
+            "componentType" : 5126, 
+            "count" : 99, 
+            "max" : [
+                1.0, 
+                1.0, 
+                1.3625217829536275e-14
+            ], 
+            "min" : [
+                0.0, 
+                -7.549791547489804e-08, 
+                -2.525485059929689e-15
+            ], 
+            "type" : "VEC3"
+        }
+    ], 
+    "asset" : {
+        "generator" : "Khronos Blender glTF 2.0 exporter", 
+        "version" : "2.0"
+    }, 
+    "bufferViews" : [
+        {
+            "buffer" : 0, 
+            "byteLength" : 168, 
+            "byteOffset" : 0, 
+            "target" : 34963
+        }, 
+        {
+            "buffer" : 0, 
+            "byteLength" : 1188, 
+            "byteOffset" : 168, 
+            "target" : 34962
+        }, 
+        {
+            "buffer" : 0, 
+            "byteLength" : 1188, 
+            "byteOffset" : 1356, 
+            "target" : 34962
+        }
+    ], 
+    "buffers" : [
+        {
+            "byteLength" : 2544, 
+            "uri" : "data:application/octet-stream;base64,AAECAAMBBAUGBAcFBwgFBwkICQoICQsKCwwKCw0MDQ4MDQ8ODxAODxEQERIQERMSExQSExUUFRYUFRcWFwIWFwACDA4YGRobHB0eHyAhIiMkCAolJicoJiknKissKi0rLi8wLjEvMjM0MjUzNjc4Njk3Ojs8Oj07Pj9APkE/QkNEQkVDRkdIRklHSktMSk1LTk9QTlFPUlNUVVZXWFlaW1xdXl9gLmFiXXRRPwAAAAAAAIA/AACAPwAAAADtDWk/XXRRPwAAAADtDWk/AACAPwAAAAAAAIA/AACAvwAAAAAAAIA/XXRRvwAAAADtDWk/AACAvwAAAADtDWk/XXRRvwAAAAAAAIA/uugivwAAAADtDWk/uugivwAAAAAAAIA/L7rovgAAAADtDWk/LrrovgAAAAAAAIA/6aKLvgAAAADtDWk/6KKLvgAAAAAAAIA/ji66vQAAAADtDWk/iC66vQAAAAAAAIA/iC66PQAAAADtDWk/ji66PQAAAAAAAIA/6KKLPgAAAADtDWk/6aKLPgAAAAAAAIA/LrroPgAAAADtDWk/L7roPgAAAAAAAIA/uugiPwAAAADtDWk/uugiPwAAAAAAAIA/rX1DvgAAAACw7DW+iC66PQAAAADtDWk/6KKLPgAAAADtDWk/ad8wPgAAAACw7DW+LrroPgAAAADtDWk/uugiPwAAAADtDWk/IE8JPwAAAACw7DW+AACAvwAAAADtDWk/XXRRvwAAAADtDWk/9g1rvwAAAACw7DW+XXRRPwAAAADtDWk/AACAPwAAAADtDWk/ZmZmPwAAAACw7DW+sfYNvwAAAACw7DW+aSGiMwAAgD/tDWk/+aaEM110UT8AAIA/+aaEM110UT/tDWk/aSGiMwAAgD8AAIA/+aaEs110Ub/tDWk/aSGiswAAgL8AAIA/aSGiswAAgL/tDWk/+aaEs110Ub8AAIA/EVlOs7roIr/tDWk/+aaEs110Ub8AAIA/+aaEs110Ub/tDWk/EVlOs7roIr8AAIA/MWQTsy+66L7tDWk/EVlOs7roIr8AAIA/EVlOs7roIr/tDWk/MWQTsy666L4AAIA/od6wsumii77tDWk/MWQTsy666L4AAIA/MWQTsy+66L7tDWk/oN6wsuiii74AAIA/hNPrsY4uur3tDWk/oN6wsuiii74AAIA/od6wsumii77tDWk/fdPrsYguur0AAIA/fdPrMYguuj3tDWk/fdPrsYguur0AAIA/hNPrsY4uur3tDWk/hNPrMY4uuj0AAIA/oN6wMuiiiz7tDWk/hNPrMY4uuj0AAIA/fdPrMYguuj3tDWk/od6wMumiiz4AAIA/MWQTMy666D7tDWk/od6wMumiiz4AAIA/oN6wMuiiiz7tDWk/MWQTMy+66D4AAIA/EVlOM7roIj/tDWk/MWQTMy+66D4AAIA/MWQTMy666D7tDWk/EVlOM7roIj8AAIA/+aaEM110UT/tDWk/EVlOM7roIj8AAIA/EVlOM7roIj/tDWk/+aaEM110UT8AAIA/od6wsumii77tDWk/Fp53sq19Q76w7DW+hNPrsY4uur3tDWk/fdPrMYguuj3tDWk/7AhgMmnfMD6w7DW+oN6wMuiiiz7tDWk/MWQTMy666D7tDWk//OstMyBPCT+w7DW+EVlOM7roIj/tDWk/aSGiswAAgL/tDWk/g92Us/YNa7+w7DW++aaEs110Ub/tDWk/+aaEM110UT/tDWk/3uqRM2ZmZj+w7DW+aSGiMwAAgD/tDWk/RtEzs7H2Db+w7DW+MWQTsy+66L7tDWk/AAAAAAAAgD8AAACAAAAAAAAAgD8AAACAAAAAAAAAgD8AAACAAAAAAAAAgD8AAACAAAAAAAAAgD8AAACAAAAAAAAAgD8AAACAAAAAAAAAgD8AAACAAAAAAAAAgD8AAACAAAAAAAAAgD8AAACAAAAAAAAAgD8AAACAAAAAAAAAgD8AAACAAAAAAAAAgD8AAACAAAAAAAAAgD8AAACAAAAAAAAAgD8AAACAAAAAAAAAgD8AAACAAAAAAAAAgD8AAACAAAAAAAAAgD8AAACAAAAAAAAAgD8AAACAAAAAAAAAgD8AAACAAAAAAAAAgD8AAACAAAAAAAAAgD8AAACAAAAAAAAAgD8AAACAAAAAAAAAgD8AAACAAAAAAAAAgD8AAACAAAAAAAAAgD8AAACAAAAAAP//fz8AAACAAAAAAP//fz8AAACAAAAAAP//fz8AAACAAAAAAP//fz8AAACAAAAAAP//fz8AAACAAAAAAP//fz8AAACAAAAAAP//fz8AAACAAAAAAP//fz8AAACAAAAAAP//fz8AAACAAAAAAP//fz8AAACAAAAAAP//fz8AAACAAAAAAP//fz8AAACAAAAAAAAAgD8AAACAAACAP2chorMAAACAAACAP2chorMAAACAAACAP2chorMAAACAAACAP2chorMAAACAAACAP2chorMAAACAAACAP2chorMAAACAAACAP2chorMAAACAAACAP2chorMAAACAAACAP2ohorMAAACAAACAP2ohorMAAACAAACAP2ohorMAAACAAACAP2ohorMAAACAAACAP2ghorM6c3UoAACAP2ghorM6c3UoAACAP2ghorM6c3UoAACAP2ghorM6c3UoAACAP2shorM6c3UoAACAP2shorM6c3UoAACAP2shorM6c3UoAACAP2shorM6c3UoAACAP2khorMAAACAAACAP2khorMAAACAAACAP2khorMAAACAAACAP2khorMAAACAAACAP2khorM6c/UnAACAP2khorM6c/UnAACAP2khorM6c/UnAACAP2khorM6c/UnAACAP2khorMAAACAAACAP2khorMAAACAAACAP2khorMAAACAAACAP2khorMAAACAAACAP2shorM6c3UoAACAP2shorM6c3UoAACAP2shorM6c3UoAACAP2shorM6c3UoAACAP2ghorM6c3UoAACAP2ghorM6c3UoAACAP2ghorM6c3UoAACAP2ghorM6c3UoAACAP2ohorMAAACAAACAP2ohorMAAACAAACAP2ohorMAAACAAACAP2ohorMAAACAAACAP2khorOmwiGmAACAP2khorOmwiGmAACAP2khorOmwiGm//9/P2ghorOlwiEm//9/P2ghorOlwiEm//9/P2ghorOlwiEm//9/P2ghorP4o3Im//9/P2ghorP4o3Im//9/P2ghorP4o3Im//9/P2ghorMAAACA//9/P2ghorMAAACA//9/P2ghorMAAACA//9/P2ghorP6+jWn//9/P2ghorP6+jWn//9/P2ghorP6+jWnAACAP2ohorMAAACAAACAP2ohorMAAACA"
+        }
+    ], 
+    "materials" : [
+        {
+            "name" : "Material", 
+            "pbrMetallicRoughness" : {}
+        }
+    ], 
+    "meshes" : [
+        {
+            "name" : "Plane.001", 
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "NORMAL" : 2, 
+                        "POSITION" : 1
+                    }, 
+                    "indices" : 0, 
+                    "material" : 0
+                }
+            ]
+        }
+    ], 
+    "nodes" : [
+        {
+            "name" : "Camera", 
+            "rotation" : [
+                0.483536034822464, 
+                0.33687159419059753, 
+                -0.20870360732078552, 
+                0.7804827094078064
+            ], 
+            "translation" : [
+                7.481131553649902, 
+                5.34366512298584, 
+                6.5076398849487305
+            ]
+        }, 
+        {
+            "name" : "Lamp", 
+            "rotation" : [
+                0.16907575726509094, 
+                0.7558802962303162, 
+                -0.27217137813568115, 
+                0.570947527885437
+            ], 
+            "scale" : [
+                1.0, 
+                1.0, 
+                0.9999999403953552
+            ], 
+            "translation" : [
+                4.076245307922363, 
+                5.903861999511719, 
+                -1.0054539442062378
+            ]
+        }, 
+        {
+            "mesh" : 0, 
+            "name" : "Plane.001"
+        }
+    ], 
+    "scene" : 0, 
+    "scenes" : [
+        {
+            "name" : "Scene", 
+            "nodes" : [
+                2, 
+                1, 
+                0
+            ]
+        }
+    ]
+}

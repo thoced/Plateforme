@@ -4,6 +4,7 @@ import com.game.plate.appstates.CameraAppState;
 import com.jme3.animation.AnimChannel;
 import com.jme3.animation.AnimControl;
 import com.jme3.app.SimpleApplication;
+import com.jme3.bullet.BulletAppState;
 import com.jme3.bullet.collision.shapes.CapsuleCollisionShape;
 import com.jme3.bullet.collision.shapes.CollisionShape;
 import com.jme3.bullet.control.BetterCharacterControl;
@@ -20,7 +21,10 @@ import com.jme3.post.FilterPostProcessor;
 import com.jme3.scene.SceneGraphVisitor;
 import com.jme3.scene.Spatial;
 import com.ss.editor.extension.loader.SceneLoader;
+import com.ss.editor.extension.scene.app.state.EditableSceneAppState;
+import com.ss.editor.extension.scene.app.state.impl.bullet.EditableBulletSceneAppState;
 import controlers.AvatarControl;
+import javafx.scene.Scene;
 
 /**
  * The game application class.
@@ -36,6 +40,8 @@ public class GameApplication extends SimpleApplication {
 
     private AvatarControl avatarControl;
 
+    private BetterCharacterControl betterCharacterControl;
+
     @Override
     public void simpleInitApp() {
         renderManager.setPreferredLightMode(TechniqueDef.LightMode.SinglePass);
@@ -50,6 +56,7 @@ public class GameApplication extends SimpleApplication {
         // register loader of j3s files
         SceneLoader.install(this, postProcessor);
 
+
         //final Camera camera = getCamera();
         //camera.setLocation(new Vector3f(0, 19.356062F, 44.070957F));
        // camera.setRotation(new Quaternion(-0.042982846F, 0.90933293F, -0.09716145F, -0.40227568F));
@@ -58,24 +65,45 @@ public class GameApplication extends SimpleApplication {
         SceneGraphVisitor visitor = new SceneGraphVisitor() {
             @Override
             public void visit(Spatial spat) {
-                CharacterControl control = spat.getControl(CharacterControl.class);
-                if(control != null){
+                AnimControl animControl = spat.getControl(AnimControl.class);
+
+               // CharacterControl control = spat.getControl(CharacterControl.class);
+                if(animControl != null) {
                     avatar = spat;
                     // reception du controller d'animation
-                    AnimControl animControl = avatar.getControl(AnimControl.class);
-                    if(animControl != null){
-                        AnimChannel animChannel = animControl.createChannel();
-                        animChannel.setAnim("IDLE_BASE");
-                    }
+                    //AnimControl animControl = avatar.getControl(AnimControl.class);
+
+                    AnimChannel animChannel = animControl.createChannel();
+                    animChannel.setAnim("IDLE_BASE");
+
                     // creation de l'avatarcontrol
                     avatarControl = new AvatarControl();
                     avatar.addControl(avatarControl);
+                    BetterCharacterControl betterCharacterControl = new BetterCharacterControl(0.5f, 3f, 2f);
+                    betterCharacterControl.setGravity(new Vector3f(0, 0, 0));
+                    betterCharacterControl.setPhysicsDamping(1f);
+                    betterCharacterControl.setDucked(true);
+                    betterCharacterControl.setDuckedFactor(0.5f);
+                    betterCharacterControl.setJumpForce(new Vector3f(0,2f,0));
+                    avatar.addControl(betterCharacterControl);
+
+
+                    float tpf = timer.getFrameRate();
+                    SceneLoader.tryToGetStateManager().update(tpf);
+
+                    EditableBulletSceneAppState editableBulletSceneAppState = SceneLoader.tryToGetStateManager().getState(EditableBulletSceneAppState.class);
+                    editableBulletSceneAppState.getPhysicsSpace().add(betterCharacterControl);
+
+                    System.out.println("regid : " + editableBulletSceneAppState.getPhysicsSpace().getRigidBodyList().size());
+
 
 
 
                 }
 
-            }
+                }
+
+
 
         };
 
@@ -84,7 +112,9 @@ public class GameApplication extends SimpleApplication {
        // getFlyByCamera().setMoveSpeed(2f);
         getFlyByCamera().setEnabled(false);
 
-        rootNode.attachChild(assetManager.loadModel("Scenes/level01Scene_1.j3s"));
+        rootNode.attachChild(assetManager.loadModel("Scenes/level01Scene_1_1_1_1_1_1.j3s"));
+
+
 
         getRootNode().depthFirstTraversal(visitor);
 
@@ -136,6 +166,7 @@ public class GameApplication extends SimpleApplication {
     public void update() {
         super.update();
 
+        System.out.println("pos: " + avatar.getWorldTranslation());
         if(avatar != null){
             float x = JoystickEventListener.getInstance().getValueAxeX();
             float y = JoystickEventListener.getInstance().getValueAxeY();
