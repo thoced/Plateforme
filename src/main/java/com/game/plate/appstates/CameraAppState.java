@@ -82,8 +82,10 @@ public class CameraAppState extends AbstractAppState {
         quaternionCamera.fromAngles(angles);
         nodeTarget.setLocalRotation(quaternionCamera);
 
-        nodeTarget.setLocalTranslation(avatarSpatial.getWorldTranslation());
-        cameraNode.lookAt(nodeTarget.getWorldTranslation(),Vector3f.UNIT_Y);
+        if(avatarSpatial != null) {
+            nodeTarget.setLocalTranslation(avatarSpatial.getWorldTranslation());
+            cameraNode.lookAt(nodeTarget.getWorldTranslation(), Vector3f.UNIT_Y);
+        }
 
 
     }
